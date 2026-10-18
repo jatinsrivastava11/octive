@@ -1,0 +1,156 @@
+.card {
+  position: relative;
+  background-color: var(--surface);
+  border: 1px solid var(--rule-strong);
+  border-radius: var(--radius-md);
+  padding: var(--s-5);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 320px;
+  box-shadow: 0 4px 20px rgb(0 0 0 / 0.4);
+  transition: transform var(--dur) var(--ease-out), border-color var(--dur) var(--ease-out), box-shadow var(--dur) var(--ease-out);
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgb(0 0 0 / 0.6);
+}
+
+/* Rarity Accents */
+.common {
+  border-color: var(--rule-strong);
+}
+
+.rare {
+  border-color: rgb(79 109 245 / 0.4);
+}
+.rare:hover {
+  border-color: var(--cobalt);
+}
+
+.epic {
+  border-color: rgb(201 123 224 / 0.4);
+}
+.epic:hover {
+  border-color: var(--orchid);
+}
+
+.legendary {
+  border-color: rgb(232 176 74 / 0.5);
+  background: linear-gradient(170deg, var(--surface) 0%, rgb(34 32 27 / 0.9) 100%);
+}
+.legendary:hover {
+  border-color: var(--amber);
+  box-shadow: 0 12px 32px rgb(232 176 74 / 0.15);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--s-4);
+  padding-bottom: var(--s-2);
+  border-bottom: 1px solid var(--rule);
+}
+
+.brandMark {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  letter-spacing: var(--tracking-caps);
+  color: var(--text-muted);
+}
+
+.rarityBadge {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: var(--tracking-caps);
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: var(--radius-xs);
+}
+
+.common .rarityBadge {
+  background-color: rgb(236 229 216 / 0.08);
+  color: var(--bone-300);
+}
+
+.rare .rarityBadge {
+  background-color: rgb(79 109 245 / 0.15);
+  color: var(--cobalt);
+}
+
+.epic .rarityBadge {
+  background-color: rgb(201 123 224 / 0.15);
+  color: var(--orchid);
+}
+
+.legendary .rarityBadge {
+  background-color: rgb(232 176 74 / 0.18);
+  color: var(--amber);
+}
+
+.body {
+  margin-bottom: var(--s-5);
+}
+
+.subtitle {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  letter-spacing: var(--tracking-wide);
+  color: var(--text-muted);
+  text-transform: uppercase;
+  margin-bottom: var(--s-1);
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: var(--text-2xl);
+  font-weight: 600;
+  color: var(--text-strong);
+  line-height: var(--leading-tight);
+}
+
+.stats {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-2);
+  background-color: rgb(9 8 7 / 0.5);
+  padding: var(--s-3);
+  border-radius: var(--radius-sm);
+  margin-bottom: var(--s-4);
+}
+
+.statRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.statLabel {
+  font-family: var(--font-sans);
+  font-size: var(--text-xs);
+  color: var(--text-muted);
+}
+
+.statValue {
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--bone-50);
+}
+
+.footer {
+  border-top: 1px dashed var(--rule);
+  padding-top: var(--s-3);
+}
+
+.flavorText {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: var(--text-xs);
+  line-height: var(--leading-snug);
+  color: var(--bone-300);
+}

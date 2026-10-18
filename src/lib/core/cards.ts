@@ -1,4 +1,5 @@
 import type { Rarity } from "./types";
+export type { Rarity } from "./types";
 
 /**
  * Card engine: generates collectible trading cards from listening stats.
